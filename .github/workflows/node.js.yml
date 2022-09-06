@@ -28,14 +28,14 @@ jobs:
         npm ci
     - name: Build the app 🏗
       run: |
-        cd my-app
+        cd react-testing-course
         npm run build
     - name: Run component tests 🔸
       run: |
-        cd my-app
+        cd react-testing-course
         npm run test
     - name: Start the app 📤
       run: |
-        cd my-app
+        cd react-testing-course
         npm start &
         npx wait-on --timeout 60000
