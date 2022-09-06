@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies 📦
       #Using npm ci is generally faster than running npm install
       run: |
-        cd my-app
+        cd react-testing-course
         npm ci
     - name: Build the app 🏗
       run: |
