@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies 📦
         #Using npm ci is generally faster than running npm install
         run: |
-          npm ci
+          npm install
       - name: Build the app 🏗
         run: |
           npm run build
