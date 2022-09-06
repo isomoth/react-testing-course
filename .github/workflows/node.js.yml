@@ -23,18 +23,14 @@ jobs:
       - name: Install dependencies 📦
         #Using npm ci is generally faster than running npm install
         run: |
-          cd /
           npm ci
       - name: Build the app 🏗
         run: |
-          cd /
           npm run build
       - name: Run component tests 🔸
         run: |
-          cd /
           npm run test
       - name: Start the app 📤
         run: |
-          cd /
           npm start &
           npx wait-on --timeout 60000
